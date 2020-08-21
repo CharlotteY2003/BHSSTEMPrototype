@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>BHS STEM Website</title>
+       <link rel="stylesheet" type="text/css" href="index.css" />
+       <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=PT+Sans&display=swap" rel="stylesheet">
+       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+
+</head> 
+<body>
+    
+  <div class="body-container">
+
+<div class = "homepage" id="homePage">
+    
+    <div id="menuRow" class="menu">Braintree STEM Website
+        <div class = "sub" id="sub"><i>This is the prototype website for Braintree's STEM website</i></div>
+    </div>
+    <div class = "main" id="main">
+           <label for="filter">Filter:</label>
+
+<select name="filter" id="filter" class="filter">
+  <option value="free">Free</option>
+  <option value="co-ed">Co-ed</option>
+  <option value="girls">Girls</option>
+  
+</select>
+<div class="parent-white">
+    <div class="box pink" data-aos="zoom-in"><strong>BU AI4ALL</strong>
+        <ul>
+            <li>Location: Boston University</li>
+            <li>Cost: Free</li>
+            <li>Age: Seniors+ juniors</li>
+            <li>Deadline: May 15, 2021</li>
+            <li>Description: An intensive 3 week program where girls can learn the basics of AI</li>
+            
+          </ul>
+       </div>
+    <div class="box purple" data-aos="zoom-in"><strong>BU Codebreakers</strong>
+        <ul>
+            <li>Location: Boston University</li>
+            <li>Cost: Free</li>
+            <li>Age: Sophmores</li>
+            <li>Deadline: May 15, 2021</li>
+            <li>Description: An intensive 3 week program where girls can learn the basics of decoding</li>
+          </ul>
+       </div>
+    <div class="box blue" data-aos="zoom-in"><strong>MITES</strong>
+        <ul>
+            <li>Location: MIT</li>
+            <li>Cost: Free</li>
+            <li>Age: Seniors</li>
+            <li>Deadline: February 5, 2021</li>
+            <li>Description: An intensive 6 week program focused on STEM and taught by MIT professors. Only applicable to minorities</li>
+          </ul>
+    </div>
+    <div class="box green" data-aos="zoom-in"><strong>Girls Who Code</strong>
+        <ul>
+            <li>Location: Boston</li>
+            <li>Cost: Free</li>
+            <li>Age: all ages</li>
+            <li>Deadline: May 1, 2021</li>
+            <li>Description: An intensive 3 week program where girls can learn the basics of coding</li>
+          </ul>
+    </div>
+    <div class="box red" data-aos="zoom-in"><strong>Student Technician Intern</strong>
+        <ul>
+            <li>Location: Braintree High School</li>
+            <li>Cost: Free</li>
+            <li>Age: all ages</li>
+            <li>Deadline: N/A</li>
+            <li>Description: See Rebecca Kidwell for more details</li>
+          </ul>
+    </div>
+    <div class="box purple" data-aos="zoom-in"><strong>RSI</strong>
+        <ul>
+            <li>Location: MIT</li>
+            <li>Cost: Free</li>
+            <li>Age: Seniors</li>
+            <li>Deadline: February 1, 2020</li>
+            <li>Description: An intensive 6 week research program with the nation's upcoming young talent in science</li>
+          </ul>
+     </div>
+  </div>
+
+
+
+    <div id="post" class = "post">
+        <div id="topRow">
+           <label id="name">Title:</label>
+            <input id="nameInput" type="text"> 
+        </div>
+        
+            
+            <div class = "choiceRow">
+                <input class = "donation" id="donator" type="radio" value="Donor" name="category">
+                <label>Donor</label>
+            <input class = "security" id="secure" type="radio" value = "Security" name="category">
+            <label>Security</label>
+            <input class = "smallFavor" id="favor" type="radio" value = "Favor" name="category">
+            <label>Small Favor</label>
+            <input class = "request" id="requester" type="radio" value = "request" name="category">
+            <label>Help out a Friend</label>
+            </div>
+           
+            <label id="description">Description:</label>
+        <textarea id="descriptionInput" type="text" class="descriptionInputClass"></textarea>
+        <input type="button" name="submit" id="submitButton" class="submitButtonClass" value="Post" onclick = "getPost()">
+        
+        </div>
+    
+            
+    </div>
+    </div>
+ 
+    
+</div>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
+<script src="index.js"></script>
+</html>
